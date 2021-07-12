@@ -1,0 +1,54 @@
+<title>Empréstimo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><div class="container" >
+      <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+    
+    <div class="content"> 
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Empréstimo</h1> 
+
+          <p>
+            <label for="cpf">CPF</label>
+            <input id="cpf" name="cpf" required="required" type="cpf" placeholder="Ex. 000.000.000-00" minlength="11" maxlength="14"/>
+          </p>
+
+          <p> 
+            <label for="cod_livro">ISBN</label>
+            <input id="cod_livro" name="cod_livro" required="required" type="text" placeholder="Ex. 000-0000000000" minlength="13" maxlength="14" />
+          </p>
+
+          <p> 
+            <label for="email_cad">E-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="Ex. contato@htmlecsspro.com"/> 
+          </p>
+          
+          <p>
+            <tr><td><label>Data do empréstimo:<br><input type="date" name="emprestimo" value="" required/></label><br><br></td>
+          </p>
+
+          <p>
+            <tr><td><label>Data da devolução:<br><input type="date" name="devolucao" value="" required/></label><br><br></td>
+          </p>
+          
+        </form>
+        
+        <td> <input class="cadastrar" type="submit" value="Ver quantidade de exemplares" name="funcao"/> </td> </tr>
+
+        <td> <input class="cadastrar" type="submit" value="Ver se há penalidades" name="funcao"/> </td> </tr>
+
+        <td> <input class="cadastrar" type="submit" value="Ver empréstimos" name="funcao"/> </td> </tr>
+
+        <p> 
+            <input type="submit" value="Emprestar"/> 
+          </p>
+    </div>
